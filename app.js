@@ -1,8 +1,20 @@
-// import functions and grab DOM elements
 
-// initialize state
+import { makeSoundAndChangeH1ForCat, makeSoundAndChangeH1ForDog, makeSoundAndChangeH1ForHorse } from './utils.js';
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const horseEl = document.getElementById('horse-image');
+const dogEl = document.getElementById('dog-image');
+const catEl = document.getElementById('cat-image');
+
+
+horseEl.addEventListener('click', () => {
+    makeSoundAndChangeH1ForHorse(); 
+});
+
+dogEl.addEventListener('click', () => {
+    makeSoundAndChangeH1ForDog();
+});
+
+catEl.addEventListener('click', () => {
+    makeSoundAndChangeH1ForCat();
+});
+
